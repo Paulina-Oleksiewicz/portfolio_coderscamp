@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    line-height: 2;
+}
+
+
+.nav ul {
+    display: flex;
+    background: #181928;
+    list-style: none;
+}
+
+@media screen and (max-width: 700px){
+
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.nav li{
+    flex: 1;
+    text-align: center;
+}
+
+.nav a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.7s;
+}
+
+.nav a:hover{
+    background: grey;
+
+}
+
+.icon{
+    width: 100px;
+    display: inline;
+}
+
+.facebook, .github, .instagram{
+    width: 33,33%;
+    display: inline;
+    
+}
+
+.icon a:link
+    {
+    color:whitesmoke;
+    }
+
+.icon a:active
+    {
+    color:whitesmoke;
+    }
+            
+.icon a:visited
+    {
+    color: whitesmoke;
+    }
+
+.icon a:hover
+    {
+    color:whitesmoke;
+    }
+
+
+header{
+
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    background-size: cover;
+    background-position: right;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/background.jpeg);
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header .header-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 15px 100px;
+    width: 100%;
+}
+
+header .header-content .header-content-inner h1 {
+    font-size: 2;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    text-shadow: 0px 0px 3px #000;
+}
+
+header .header-content .header-content-inner h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    margin-bottom: 50px;
+    text-shadow: 0px 0px 3px #000;
+}
+
+@media (min-width: 992px){
+    
+    header {
+        background-image: url(image/background.jpeg);
+    }
+
+    header .header-content {
+        width: 60%;
+    }  
+}
+
+@media (min-width: 768px){
+    
+    header {
+        min-height: 100%;
+    }
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0 50px;
+        width: 100%;
+    }
+    header .header-content .header-content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 480px){
+   
+    header{
+        
+    }
+
+    header .header-content {
+        width: 100%;
+        right: 4%;
+        letter-spacing: 0;
+        font-size: 0.7em;
+    }  
+}
+
+main{
+    width: 100%;
+    position: relative;
+    background-color: #04040c;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4))
+}
+
+main #aboutme{
+    display: flex;
+}
+
+#aboutme{
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    color: white;
+    font-size: 2em;
+}
+
+h2
+{
+	font-size: 32px;
+	font-weight: 400;
+	color: white;
+	margin-top: 45px;	
+	margin-bottom: 30px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+#myfoto img{
+    padding-top: 12%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mylife{
+    font-size: 0.5em;
+    text-align: center;
+    text-transform: initial;
+}
+
+@media screen and (max-width: 700px){
+    main #aboutme{
+        flex-flow: column wrap;
+        text-align: center;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px){
+    
+    #aboutme{
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+
+}
+
+@media (max-width: 700px){
+    
+    #aboutme{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    }
+}
+
+#myproject{
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	text-align: center;
+	padding: 0;
+    margin-bottom: 25px;
+}
+
+
+.portfolio
+{
+	display: inline-block;
+    width: 430px;
+    margin: 30px;
+	text-align: center;
+    padding: 5px;
+    
+}
+
+.portfolio p
+{
+	padding: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+h2
+{
+	font-size: 32px;
+	font-weight: 400;
+	color: white;
+	margin-top: 45px;	
+	margin-bottom: 30px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.first
+{
+	width: 450px;
+	transition: all 0.2s ease-in-out;
+}
+
+.first:hover
+{
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.second
+{
+	width: 450px;
+	transition: transform .2s ease-in-out;
+}
+
+.second:hover
+{
+	-webkit-transform: scale(0.95) rotate(5deg);
+	-ms-transform: scale(0.95) rotate(5deg);
+    transform: scale(0.95) rotate(5deg);
+    opacity: 0.8;
+}
+
+@media (max-width: 480px){
+    
+    #myproject{
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+    }
+
+
+@media screen and (max-width: 768px){
+    #myproject{
+         flex-flow: column wrap;
+         text-align: center;
+         padding: 0;
+         overflow: hidden;
+    }
+    
+}
+
+a:link
+    {
+    color:white;
+    }
+
+a:active
+    {
+    color:white;
+    }
+            
+a:visited
+    {
+    color: white;
+    }
+
+a:hover
+    {
+    color:grey);
+    }
